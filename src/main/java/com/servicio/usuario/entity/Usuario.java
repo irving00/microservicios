@@ -14,23 +14,20 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="usuario")
+@Table(name = "usuarios")
 public class Usuario {
 	
 	@Id
-	@Column(name="id")
+	@Column(name = "id")
 	private String usuarioId;
-	public String getUsuarioId() {
-		return usuarioId;
-	}
-	public void setUsuarioId(String usuarioId) {
-		this.usuarioId = usuarioId;
-	}
-	@Column(name="nombre", length = 20)
+	
+	@Column(name = "nombre", length = 20)
 	private String nombre;
-	@Column(name="email")
+	
+	@Column(name = "email")
 	private String email;
-	@Column(name="informacion")
+	
+	@Column(name = "informacion")
 	private String informacion;
 
 }

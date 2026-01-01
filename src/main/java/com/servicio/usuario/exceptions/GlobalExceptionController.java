@@ -1,11 +1,10 @@
-package com.servicio.usuario.exceptions.controller;
+package com.servicio.usuario.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import com.servicio.usuario.exceptions.ResourceNotFoundException;
 import com.servicio.usuario.response.ApiResponse;
 @RestControllerAdvice
 public class GlobalExceptionController {
